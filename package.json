@@ -1,0 +1,25 @@
+{
+  "name": "cup-of-tea",
+  "version": "1.0.0",
+  "description": "A simple cup of tea",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arularmstrong/cup-of-tea.git"
+  },
+  "keywords": [
+    "tea-protocol",
+    "random",
+    "tea",
+    "fun"
+  ],
+  "author": "Arul Armstrong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arularmstrong/cup-of-tea/issues"
+  },
+  "homepage": "https://github.com/arularmstrong/cup-of-tea#readme"
+}

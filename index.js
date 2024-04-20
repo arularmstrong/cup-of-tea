@@ -1,4 +1,5 @@
 const { random } = require('chroma-js');
+const svg2img = require('svg2img');
 
 /**
  * Generates SVG code for a tea cup with random colors for vapor, pot, plate, and tea bag.
@@ -46,5 +47,23 @@ function randomTeaCup() {
     return svgCode;
 }
 
+/**
+ * Generates a PNG image of a tea cup.
+ * @param {string} outputFileName - Name of the output PNG file.
+ */
+function generateRandomTeaCupPNG(outputFileName) {
+   const svgCode = randomTeaCup();
+
+   svg2img(svgCode, function(error, buffer) {
+       if (error) {
+           console.error('Error:', error);
+       } else {
+           console.log('PNG image generated successfully.');
+           // Save the PNG image to a file
+           fs.writeFileSync(outputFileName, buffer);
+       }
+   });
+}
+
 // Export the function for use as an npm package
-module.exports = { randomTeaCup };
+module.exports = { randomTeaCup, generateRandomTeaCupPNG };

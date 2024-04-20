@@ -1,5 +1,5 @@
 {
-  "name": "cup-of-tea",
+  "name": "@hot-tea-labs/cup-of-tea",
   "version": "1.0.0",
   "description": "A simple cup of tea",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arularmstrong/cup-of-tea.git"
+    "url": "git+https://github.com/hot-tea-labs/cup-of-tea.git"
   },
   "keywords": [
     "tea-protocol",
@@ -19,7 +19,7 @@
   "author": "Arul Armstrong",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/arularmstrong/cup-of-tea/issues"
+    "url": "https://github.com/hot-tea-labs/cup-of-tea/issues"
   },
-  "homepage": "https://github.com/arularmstrong/cup-of-tea#readme"
+  "homepage": "https://github.com/hot-tea-labs/cup-of-tea#readme"
 }

@@ -1,27 +1,15 @@
-/**
- * Generates a random color in hexadecimal format.
- * @returns {string} A random hexadecimal color code.
- */
-function generateRandomColor() {
-    // Generate random values for RGB channels
-    var r = Math.floor(Math.random() * 256);
-    var g = Math.floor(Math.random() * 256);
-    var b = Math.floor(Math.random() * 256);
-    // Convert RGB values to hexadecimal format
-    var color = '#' + r.toString(16).padStart(2, '0') + g.toString(16).padStart(2, '0') + b.toString(16).padStart(2, '0');
-    return color;
-}
+const { random } = require('chroma-js');
 
 /**
  * Generates SVG code for a tea cup with random colors for vapor, pot, plate, and tea bag.
  * @returns {string} SVG code for the tea cup.
  */
 function randomTeaCup() {
-    // Generate random colors for vapor, pot, tea bag and plate
-    const vapourColor = generateRandomColor();
-    const potColor = generateRandomColor();
-    const teaBagColor = generateRandomColor();
-    const plateColor = generateRandomColor();
+   // Generate random color palette for the tea cup
+   const vapourColor = random().hex();
+   const potColor = random().hex();
+   const teaBagColor = random().hex();
+   const plateColor = random().hex();
 
     // SVG code for the tea cup with random colors
     var svgCode = `

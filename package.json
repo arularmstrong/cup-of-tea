@@ -1,6 +1,6 @@
 {
   "name": "@hot-tea-labs/cup-of-tea",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple cup of tea",
   "main": "index.js",
   "scripts": {

@@ -1,5 +1,7 @@
 const { random } = require('chroma-js');
 const svg2img = require('svg2img');
+var _ = require('lodash/core');
+const { program } = require('commander');
 
 /**
  * Generates SVG code for a tea cup with random colors for vapor, pot, plate, and tea bag.
